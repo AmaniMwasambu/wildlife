@@ -9,9 +9,11 @@ public interface AnimalService {
 
         Animal getAnimalById(int id);
 
+        Animal getAnimalByAnimalCode(String animalCode);
+
         public Void saveAnimal(Animal animal);
 
-        public Void updateAnimal(Animal animal);
+        public Void updateAnimal(Animal animal, int id);
 
-        public void deleteAnimal(Animal animal, int id);
+        public Void deleteAnimal(Animal animal, int id);
 }

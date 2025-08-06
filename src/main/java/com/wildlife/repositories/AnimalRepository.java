@@ -9,5 +9,5 @@ import java.util.Optional;
 @Repository
 
 public interface AnimalRepository extends JpaRepository<Animal, Integer> {
-    Optional<Animal>findByAnimalLocation(String animalLocation);
+    Optional<Animal>findByAnimalCode(String animalCode);
 }
